@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Patterns | icon contract</title>
+    <style>
+        html, body { margin: 0; overflow: hidden; background: #330000; }
+    </style>
+</head>
+<body>
+    <script src="js/BasicRenderer.js"></script>
+
+    <script>
+
+    var renderer = new BasicRenderer();
+    renderer.backgroundColor = "#330000";
+
+    var offset = false;
+
+    //rows
+    // for(var i = 0; i < window.innerHeight; i += 100) {
+    //     //columns
+    //     for(var j = 0; j < window.innerWidth; j += 100) {
+    //         renderer.add( createTri(j, i, 80, 40, "#3399CC") );
+    //     }
+    // }
+
+    renderer.add( createTri(window.innerWidth * 0.5, window.innerHeight * 0.5, 200, 200, "#3399CC") );
+
+    renderer.draw();
+
+    function createTri(x, y, width, height, color, center) {
+        center = center || false;
+        return {
+            draw : function (ctx) {
+
+                var w3 = width / 3;
+                var h3 = height / 3;
+
+                ctx.beginPath();
+
+                if(center) {
+                    ctx.translate(x - (width * 0.5), y - (height* 0.5));
+                }
+
+                //top left
+                ctx.moveTo(0, h3);
+                ctx.lineTo(w3, h3);
+                ctx.lineTo(w3, 0);
+
+                ctx.moveTo(0, 0);
+                ctx.lineTo(w3, h3);
+
+                //top right
+                ctx.moveTo(width, h3);
+                ctx.lineTo(width-w3, h3);
+                ctx.lineTo(width-w3, 0);
+
+                ctx.moveTo(width, 0);
+                ctx.lineTo(width-w3, h3);
+
+                //bot left
+                ctx.moveTo(0, height-h3);
+                ctx.lineTo(w3, height-h3);
+                ctx.lineTo(w3, height);
+
+                ctx.moveTo(0, height);
+                ctx.lineTo(w3, height-h3);
+
+                //bot right
+                ctx.moveTo(width, height-h3);
+                ctx.lineTo(width-w3, height-h3);
+                ctx.lineTo(width - w3, height);
+
+                ctx.moveTo(width, height);
+                ctx.lineTo(width - w3, height - h3);
+
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 5;
+                ctx.stroke();
+
+            }
+        };
+    }
+
+    </script>
+</body>
+</html>

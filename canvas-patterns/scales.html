@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Patterns | scales</title>
+    <style>
+        html, body { margin: 0; overflow: hidden; background: #330000; }
+    </style>
+</head>
+<body>
+    <script src="js/BasicRenderer.js"></script>
+
+    <script>
+
+    var renderer = new BasicRenderer();
+    renderer.backgroundColor = "#330000";
+
+    var offset = false;
+
+    //rows
+    for(var i = 0; i < window.innerHeight; i += 50) {
+        //columns
+        for(var j = 0; j < window.innerWidth; j += 100) {
+            renderer.add( createArc((offset ? j : j+50), i, 50, "#3399CC") );
+        }
+        offset = !offset;
+    }
+
+    renderer.draw();
+
+    function createArc(x, y, radius, color) {
+        return {
+            draw : function (ctx) {
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, Math.PI, false);
+
+                ctx.strokeStyle = color;
+                ctx.lineWidth=5;
+                ctx.stroke();
+            }
+        };
+    }
+
+    </script>
+</body>
+</html>

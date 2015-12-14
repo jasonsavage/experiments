@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Patterns | dots</title>
+    <style>
+        html, body { margin: 0; overflow: hidden }
+    </style>
+</head>
+<body>
+    <script src="js/BasicRenderer.js"></script>
+
+    <script>
+
+    var renderer = new BasicRenderer();
+    renderer.backgroundColor = "#330000";
+
+    //rows
+    for(var i = 0; i < window.innerHeight; i += 20) {
+        //columns
+        for(var j = 0; j < window.innerWidth; j += 20) {
+            //var r = 2 + (Math.random() * 8);
+            renderer.add( createCirc(j, i, 7, "#3399CC") );
+        }
+    }
+
+    renderer.draw();
+
+    function createCirc (x, y, radius, color) {
+        return {
+            draw : function (ctx) {
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
+                ctx.fillStyle = color;
+                ctx.fill();
+            }
+        };
+    }
+
+    </script>
+</body>
+</html>

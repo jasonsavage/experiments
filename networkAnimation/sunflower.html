@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Animation Example</title>
+    <style>
+        html, body { margin: 0; overflow: hidden }
+    </style>
+</head>
+<body>
+
+    <script>
+
+    (function () {
+         //create the canvas object
+        var canvas = document.createElement('canvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        document.body.appendChild(canvas);
+
+        //create the update loop
+        var startTime = new Date().getTime(),
+            lastTime = 0,
+            SEED_RADIUS = 2,
+            SCALE_FACTOR = 4,
+            TAU = Math.PI * 2,
+            MAX_D = 300,
+            centerX = window.innerWidth / 2,
+            centerY = window.innerHeight / 2,
+            PHI = (Math.sqrt(5) + 1) / 2,
+            seeds = 1000;
+
+        //create network of nodes
+        var nodes = createNodes(seeds, canvas);
+
+
+        //start looping
+        requestAnimationFrame( looper );
+
+        function looper() {
+            requestAnimationFrame( looper );
+
+            var now = new Date().getTime() - startTime,
+                delta = (now - lastTime)/1000;
+
+            //get context
+            var ctx = canvas.getContext('2d');
+
+            //clear canvas
+            ctx.clearRect(0 , 0 , canvas.width , canvas.height);
+
+            //physics
+            update( delta );
+
+            //render
+            draw( ctx );
+
+            lastTime = now;
+        }
+
+        function update(delta) {
+
+            //nodes move towards the agent its connected to
+            nodes.forEach(function (agent, i) {
+
+                if(agent.link !== -1) {
+                    var theta = i * TAU / PHI;
+                    var r = Math.sqrt(i) * SCALE_FACTOR;
+
+                    agent.x = centerX + r * Math.cos(theta);
+                    agent.y = centerY - r * Math.sin(theta);
+                }
+
+            });
+        }
+
+        function draw(ctx) {
+
+            //fill screen with black background
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+            //second layer, draw all nodes
+            nodes.forEach(function (agent) {
+                drawNode(ctx, agent);
+            });
+        }
+
+
+        function createNodes(size, canvas) {
+            var nodes = [];
+
+            for(var i = 0; i < size; i++ ){
+                nodes.push(
+                    createNodeAgent(
+                        Math.random() * canvas.width,
+                        Math.random() * canvas.height,
+                        2
+                    )
+                );
+            }
+            return nodes;
+        }
+
+        function createNodeAgent(x, y, r) {
+            return {
+                x : x,
+                y : y,
+                radius : r,
+                color : "rgba(161,96,9,1)"
+            }
+        }
+
+        function drawNode(ctx, agent) {
+            ctx.beginPath();
+            ctx.arc(agent.x, agent.y, agent.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = agent.color;
+            ctx.fill();
+        }
+
+    }());
+    </script>
+</body>
+</html>

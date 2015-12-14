@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>Javascript State Machine Tests</title>
+        
+        <meta name="viewport" content="width=device-width">
+        
+        <style>
+            html, body
+            {
+                width:100%;
+                height:100%;
+                padding:0px;
+                margin:0px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <canvas id="stage" width="2000" height="1000" style="display:block;">
+            <p>Your browser doesn't support the canvas tag.</p>
+        </canvas>
+        
+        <script src="js/core.js"></script>
+        
+        <script src="js/fsm/core/Agent.js"></script>
+        <script src="js/fsm/core/FSMApplication.js"></script>
+        <script src="js/fsm/core/State.js"></script>
+        <script src="js/fsm/core/StateMachine.js"></script>
+        <script src="js/fsm/core/Timer.js"></script>
+        
+        <script src="js/fsm/states/MoveToPointState.js"></script>
+        
+        <script src="js/geom/Point.js"></script>
+        
+        <script src="js/SampleApplication.js"></script>
+        <script>
+            var c = document.getElementById("stage");
+            
+            var app = new SampleApplication( c );
+            app.start();
+            
+        </script>
+    </body>
+</html>

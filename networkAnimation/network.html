@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Animation Example</title>
+    <style>
+        html, body { margin: 0; overflow: hidden }
+    </style>
+</head>
+<body>
+
+    <script>
+
+    (function () {
+         //create the canvas object
+        var canvas = document.createElement('canvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        document.body.appendChild(canvas);
+
+        //create the update loop
+        var startTime = new Date().getTime(),
+            lastTime = 0;
+
+        //create network of nodes
+        var nodes = createNodes(200, canvas);
+
+        //randomly connect nodes together
+        reconnect(nodes);
+
+        //start looping
+        requestAnimationFrame( looper );
+
+        function looper() {
+            requestAnimationFrame( looper );
+
+            var now = new Date().getTime() - startTime,
+                delta = (now - lastTime)/1000;
+
+            //get context
+            var ctx = canvas.getContext('2d');
+
+            //clear canvas
+            ctx.clearRect(0 , 0 , canvas.width , canvas.height);
+
+            //physics
+            update( delta );
+
+            //render
+            draw( ctx );
+
+            lastTime = now;
+        }
+
+        function update(delta) {
+
+            //nodes move towards the agent its connected to
+            nodes.forEach(function (agent) {
+
+                if(agent.link !== -1) {
+                    var targetAgent = nodes[agent.link];
+
+                    agent.x = chase(agent.x, targetAgent.x, 100);
+                    agent.y = chase(agent.y, targetAgent.y, 100);
+
+                    var distX = Math.abs(agent.x-targetAgent.x),
+                        distY = Math.abs(agent.y-targetAgent.y),
+                        min = (agent.radius + targetAgent.radius);
+
+                    if(distX < min && distY < min){
+                        agent.link = -1;
+                    }
+                }
+
+            });
+        }
+
+        function draw(ctx) {
+
+            //fill screen with black background
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+            //first pass, draw all links
+            nodes.forEach(function (agent) {
+                if(agent.link !== -1) {
+                    var linkedAgent = nodes[agent.link];
+                    drawLink(ctx, agent, linkedAgent);
+                }
+            });
+
+            //second layer, draw all nodes
+            nodes.forEach(function (agent) {
+                drawNode(ctx, agent);
+            });
+        }
+
+
+        function reconnect(nodes) {
+            nodes.forEach(function (agent, idx) {
+                //check how far all other agents are from this agent
+                var dists = nodes.map(function (agentToCheck, i) {
+                    return Math.abs(agent.x - agentToCheck.x) + Math.abs(agent.y - agentToCheck.y);
+                });
+
+                //find the next closest agent thats not already connected
+                var closest = 0,
+                    dist = 99999;
+
+                dists.forEach(function (distance, i) {
+                    if(distance < dist && nodes[i] !== agent && nodes[i].link === -1) {
+                        dist = distance;
+                        closest = i;
+                    }
+                });
+
+                agent.link = closest;
+            });
+        }
+
+        function createNodes(size, canvas) {
+            var nodes = [];
+
+            for(var i = 0; i < size; i++ ){
+                nodes.push(
+                    createNodeAgent(
+                        Math.random() * canvas.width,
+                        Math.random() * canvas.height,
+                        parseInt(5 + (Math.random() * 20))
+                    )
+                );
+            }
+            return nodes;
+        }
+
+        function createNodeAgent(x, y, r) {
+            return {
+                x : x,
+                y : y,
+                radius : r,
+                color : "rgba(161,96,9," + r/30 + ")",
+                link : -1
+            }
+        }
+
+        function chase(current, target, constant) {
+            var change = (target - current) / constant;
+            return current + change;
+        }
+
+        function drawNode(ctx, agent) {
+            ctx.beginPath();
+            ctx.arc(agent.x, agent.y, agent.radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = agent.color;
+            ctx.fill();
+        }
+
+        function drawLink(ctx, agent, linkedAgent) {
+            ctx.beginPath();
+            ctx.moveTo(agent.x, agent.y);
+            ctx.lineTo(linkedAgent.x, linkedAgent.y);
+
+            //line style
+            ctx.lineWidth = 5;
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = 'rgba(161,174,20,0.5)';
+
+            //draw
+            ctx.stroke();
+
+            //cleanup
+            ctx.lineWidth = 0;
+        }
+
+    }());
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Patterns | triangles</title>
+    <style>
+        html, body { margin: 0; overflow: hidden; background: #330000; }
+    </style>
+</head>
+<body>
+    <script src="js/BasicRenderer.js"></script>
+    <script src="js/Pen.js"></script>
+    <script src="js/drawCommands.js"></script>
+
+    <script>
+
+    var renderer = new BasicRenderer();
+    renderer.backgroundColor = "#330000";
+
+    var pen = new Pen(5, "#3399CC");
+    var offset;
+
+    //rows
+    for(var i = 0; i < window.innerHeight; i += 100) {
+        //columns
+        for(var j = 0; j < window.innerWidth; j += 100) {
+            pen.push( drawCommands.tri(offset ? j - 50 : j, i, 80, 80) );
+        }
+        offset = !offset;
+    }
+
+    renderer.add( pen );
+
+    renderer.draw();
+
+    </script>
+</body>
+</html>

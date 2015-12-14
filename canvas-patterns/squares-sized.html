@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Patterns | randomly sized squares</title>
+    <style>
+        html, body { margin: 0; overflow: hidden; background: #330000; }
+    </style>
+</head>
+<body>
+    <script src="js/BasicRenderer.js"></script>
+
+    <script>
+
+    var renderer = new BasicRenderer();
+    renderer.backgroundColor = "#330000";
+
+    //rows
+    for(var i = 0; i < window.innerHeight; i += 20) {
+        //columns
+        for(var j = 0; j < window.innerWidth; j += 20) {
+            var s = 2 + (Math.random() * 10);
+            renderer.add( createSquare(j, i, s, "#3399CC") );
+        }
+    }
+
+    renderer.draw();
+
+    function createSquare(x, y, size, color) {
+        return {
+            draw : function (ctx) {
+                ctx.beginPath();
+                ctx.rect(x - (size * 0.5), y - (size * 0.5), size, size);
+                ctx.fillStyle = color;
+                ctx.fill();
+            }
+        };
+    }
+
+    </script>
+</body>
+</html>
