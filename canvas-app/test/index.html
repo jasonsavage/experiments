@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvasApp test page</title>
+    <script src="../build/canvasApp-dev.js"></script>
+    
+    <style>
+        html, body
+        {
+            padding: 0px;
+            margin:0px;
+            width:100%;
+            background-color: #1d1f21;
+        }
+        canvas
+        {
+            display:block;
+            border:1px dotted #93bd68;
+            margin: 20px auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <script>
+    
+        //start application
+        var stage = canvasApp.Application.startup(800, 600);
+        
+        var box = new canvasApp.View();
+        box.layout().setSize(200, 200);
+        //box.width(200);
+        //box.height(200);
+        box.background( new canvasApp.SolidFillStyle("#333333") );
+
+        //stage.addChild( box );
+        
+        //box.addChild( box2 );
+        
+        console.log( stage );
+        
+        
+    </script>
+</body>
+</html>

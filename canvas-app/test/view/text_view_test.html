@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvasApp test page - TextView test</title>
+    <script src="../../build/canvasApp-dev.js"></script>
+    <link href="../style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+   <div class="describe">
+        <h1>Text View test</h1>
+       <ol>
+           <li>Code should add a yellow background to the stage and set stage padding to 40</li>
+           <li>Code should place "Hello, World!" in light blue on the screen with a blue background and set padding to 10</li>
+           <li>Code should place change text in 3 seconds and then change again in 6 seconds</li>
+        </ol>
+    </div>
+    
+    <script>
+    
+    
+        //start application
+        var stage = canvasApp.Application.startup(800, 600);
+        
+        //create group
+        var container = new canvasApp.ViewGroup(20, 20),
+        //create text view
+            textView = new canvasApp.TextView();
+        
+        stage.padding(40);
+        
+        //add yellow background to container
+        var square = new canvasApp.RectangleShape(200, 400);
+        square.fillStyle = new canvasApp.SolidFillStyle("#d8b11c");
+        stage.background( square );
+        
+        
+        //set text style in textView
+        textView.text("Hello, World!");
+        textView.padding(10);
+        textView.textStyle().color = "#5F94D9";
+        
+        //add blue bg to textView
+        square = new canvasApp.RectangleShape();
+        square.fillStyle = new canvasApp.SolidFillStyle("#204473");
+        textView.background( square );
+        
+        //add textView to container
+        //container.addChild(textView);
+        
+        //add container to stage
+        stage.addChild( textView );
+        
+
+        console.log( stage );
+        
+        
+        setTimeout(function () {
+            textView.text("This is a second message from setTimout to test view updates");
+        }, 3000);
+        
+        setTimeout(function () {
+            textView.textStyle().color = "#ffffff";
+            textView.text("This is a third message from setTimout to test view updates, it should be white");
+        }, 6000);
+        
+        
+        
+    </script>
+</body>
+</html>

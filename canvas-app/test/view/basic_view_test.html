@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvasApp test page - basic view test</title>
+    <script src="../../build/canvasApp-dev.js"></script>
+    <link href="../style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="describe">
+        <h1>Basic View test</h1>
+       <ol>
+           <li>Code should place a 200 x 400 light blue rectangle on the screen at x:20 y:20</li>
+           <li>Code should place a 200 x 200 blue rectangle 5px to the right of the light blue rectangle</li>
+           <li>Code should place a 200 x 200 brown rectangle 5px to the right of the light blue rectangle and 5px to the bottom of the blue rectange</li>
+        </ol>
+    </div>
+
+    
+    <script>
+        
+        function createView(x, y, w, h, color) {
+            //create a red square
+            var view = new canvasApp.View(x,y),
+                square = new canvasApp.RectangleShape(w,h);
+                
+            square.fillStyle = new canvasApp.SolidFillStyle(color);
+            view.background( square );
+            
+            return view;
+        }
+    
+        //start application
+        var stage = canvasApp.Application.startup(800, 600);
+        
+        //add view to stage
+        stage.addChild( createView(20, 20, 200, 405, "#5F94D9") );
+        stage.addChild( createView(225, 20, 200, 200, "#204473") );
+        stage.addChild( createView(225, 225, 200, 200, "#593A28") );
+
+        console.log( stage );
+        
+    </script>
+</body>
+</html>

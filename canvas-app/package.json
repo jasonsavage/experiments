@@ -1,0 +1,29 @@
+{
+  "name": "canvasApp",
+  "version": "0.0.1",
+  "description": "A javascript framework for building applications using the canvas tag",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonsavage/canvasApp"
+  },
+  "keywords": [
+    "canvas",
+    "js",
+    "javascript",
+    "applications"
+  ],
+  "author": "Jason savage <jason.savage2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonsavage/canvasApp/issues"
+  },
+  "homepage": "https://github.com/jasonsavage/canvasApp",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.4.0",
+    "gulp-tsc": "^0.9.2",
+    "gulp-typescript": "^2.0.0",
+    "gulp-watch": "^1.0.4"
+  }
+}

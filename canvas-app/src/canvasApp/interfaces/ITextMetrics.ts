@@ -1,0 +1,4 @@
+interface ITextMetrics
+{
+    width: number;
+}

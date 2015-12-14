@@ -1,0 +1,675 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"discountRate"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"ng",
+				"ngs	angular-service"
+			],
+			[
+				"mod",
+				"modalApi"
+			],
+			[
+				"inner",
+				"innerHide"
+			],
+			[
+				"val",
+				"valueProp"
+			],
+			[
+				"te",
+				"textProp"
+			],
+			[
+				"str",
+				"storedRow"
+			],
+			[
+				"an",
+				"angular"
+			],
+			[
+				"view",
+				"viewModel"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"st",
+				"storedRow"
+			],
+			[
+				"con",
+				"control_panel"
+			],
+			[
+				"roo",
+				"rootOnly"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"mo",
+				"modalInstance"
+			],
+			[
+				"page",
+				"pageSize"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test/view/text_view_test.html",
+			"settings":
+			{
+				"buffer_size": 2227,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/index.html",
+			"settings":
+			{
+				"buffer_size": 979,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/canvasApp/display/ViewGroup.ts",
+			"settings":
+			{
+				"buffer_size": 3725,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/canvasApp/layout/AbsoluteLayout.ts",
+			"settings":
+			{
+				"buffer_size": 678,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/canvasApp/interfaces/ILayout.ts",
+			"settings":
+			{
+				"buffer_size": 66,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/canvasApp/graphics/DrawnShape.ts",
+			"settings":
+			{
+				"buffer_size": 1389,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/canvasApp/display/View.ts",
+			"settings":
+			{
+				"buffer_size": 4737,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Code Folding: Unfold All"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pag",
+				"Package Control: Install Package"
+			],
+			[
+				"pref",
+				"Preferences: Settings - User"
+			],
+			[
+				"package sett",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"pre",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Projects/canvasApp/src/canvasApp/interfaces/IRenderable.ts",
+		"/C/Projects/canvasApp/src/canvasApp.ts",
+		"/C/Projects/canvasApp/src/canvasApp/graphics/RectangleShape.ts",
+		"/C/Projects/canvasApp/src/canvasApp/display/View.ts",
+		"/C/Projects/canvasApp/src/canvasApp/core/LayoutManager.ts",
+		"/C/Projects/canvasApp/src/canvasApp/core/Utils.ts",
+		"/C/Projects/canvasApp/src/canvasApp/geom/Point.ts",
+		"/C/Projects/canvasApp/src/canvasApp/geom/Rect.ts",
+		"/C/Projects/canvasApp/src/canvasApp/graphics/styles/TextStyle.ts",
+		"/C/Projects/canvasApp/src/canvasApp/graphics/styles/SolidFillStyle.ts",
+		"/C/Projects/canvasApp/src/canvasApp/graphics/styles/LineStyle.ts",
+		"/C/Projects/num.js/test/test.js",
+		"/C/Projects/num.js/GruntFile.js",
+		"/C/Projects/num.js/grunt/jshint.js",
+		"/C/Projects/num.js/src/num.js",
+		"/C/Projects/num.js/grunt/mochaTest.js",
+		"/C/Projects/num.js/.gitignore",
+		"/C/Projects/num.js/test/tests/average.spec.js",
+		"/C/Projects/num.js/test/tests/add.spec.js",
+		"/C/Projects/num.js/node_modules/grunt-browserify/Gruntfile.js",
+		"/C/Projects/num.js/node_modules/grunt-browserify/package.json",
+		"/C/Projects/num.js/node_modules/browserify/index.js",
+		"/C/Projects/num.js/node_modules/grunt-browserify/.jshintrc",
+		"/C/Projects/num.js/node_modules/grunt-browserify/lib/runner.js",
+		"/C/Projects/num.js/node_modules/array-flatten/array-flatten.js",
+		"/C/Projects/num.js/node_modules/array-flatten/package.json",
+		"/C/Projects/num.js/package.json",
+		"/C/Projects/num.js/grunt/compile.js",
+		"/C/Projects/num.js/grunt/browserify.js",
+		"/C/Projects/num.js/grunt/config.js",
+		"/C/Projects/num.js/test/results.txt",
+		"/C/Projects/num.js/dist/num.js",
+		"/C/Projects/num.js/src/num/utils/flatten.js",
+		"/C/Projects/num.js/test/tests/n.spec.js",
+		"/C/Projects/num.js/test/tests/prod.spec.js",
+		"/C/Projects/num.js/test/tests/quot.spec.js",
+		"/C/Projects/num.js/test/tests/remove.spec.js",
+		"/C/Projects/num.js/test/tests/sort.spec.js",
+		"/C/Projects/num.js/test/tests/sum.spec.js",
+		"/C/Projects/num.js/test/tests/median.spec.js",
+		"/C/Projects/num.js/test/tests/diff.spec.js",
+		"/C/Projects/num.js/src/num/basic/sum.js",
+		"/C/Projects/num.js/src/num/core/remove.js",
+		"/C/Projects/num.js/src/num/core/sort.js",
+		"/C/Projects/num.js/src/num/consumer/discount.js",
+		"/C/Projects/num.js/src/num/common/average.js",
+		"/C/Projects/num.js/src/num/common/median.js",
+		"/C/Projects/num.js/src/num/basic/diff.js",
+		"/C/Projects/num.js/src/num/basic/prod.js",
+		"/C/Projects/num.js/src/num/basic/quot.js",
+		"/C/Users/jsavage/Downloads/Microsoft.SkypeApp_kzf8qxf38zg5c!App/hide_show_numbers.json",
+		"/C/Projects/MathFormulas/test/src/basic/subtract.spec.js",
+		"/C/Projects/MathFormulas/src/basic/subtract.js",
+		"/C/Projects/MathFormulas/test/test.js",
+		"/C/Projects/MathFormulas/GruntFile.js",
+		"/C/Projects/MathFormulas/grunt/mocha.js",
+		"/C/Projects/MathFormulas/test/src/N.spec.js",
+		"/C/Projects/MathFormulas/src/N.js",
+		"/C/Projects/MathFormulas/dist/N.js",
+		"/C/Projects/MathFormulas/src/basic/sum.js",
+		"/C/Projects/MathFormulas/grunt/compile.js",
+		"/C/Projects/MathFormulas/package.json",
+		"/C/Projects/MathFormulas/grunt/config.js",
+		"/C/Projects/MathFormulas/test/src/basic/divide.spec.js",
+		"/C/Projects/MathFormulas/test/src/basic/sum.spec.js",
+		"/C/Projects/MathFormulas/src/average.js",
+		"/C/Projects/MathFormulas/src/discount.js",
+		"/C/Projects/MathFormulas/test/src/basic/add.spec.js",
+		"/C/Projects/MathFormulas/test/src/basic/multiply.spec.js",
+		"/C/Projects/MathFormulas/test/src/subtract.spec.js",
+		"/C/Projects/MathFormulas/src/divide.js",
+		"/C/Projects/MathFormulas/test/src/divide.spec.js",
+		"/C/Projects/MathFormulas/src/multiply.js",
+		"/C/Projects/MathFormulas/test/src/multiply.spec.js",
+		"/C/Projects/MathFormulas/test/src/add.spec.js",
+		"/C/Projects/MathFormulas/src/add.js",
+		"/C/Projects/MathFormulas/test/src/average.spec.js",
+		"/C/Projects/MathFormulas/src/subtract.js",
+		"/C/Projects/MathFormulas/test/average.spec.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/.gitattributes",
+		"/C/Projects/Composer/MetLife-Composer-UI/.bowerrc",
+		"/C/Projects/Composer/MetLife-Composer-UI/.jscsrc",
+		"/C/Projects/Composer/MetLife-Composer-UI/.gitignore",
+		"/C/Projects/Composer/MetLife-Composer-UI/.jshintrc",
+		"/C/Projects/Composer/MetLife-Composer-UI/.travis.yml",
+		"/C/Projects/Composer/MetLife-Composer-UI/CONVENTIONS",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/frmHarmonyViewer.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/frmToolbox.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/assets/styles/utilities/_sizes.less",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/directives/frmToolbox.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/assets/styles/molecules/_toolbox.less",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/assets/styles/quarks/_iframes.less",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/assets/styles/control_panel.less",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/assets/styles/utilities/_borders.less",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/directives/frmHarmonyViewer.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/frmElementsPanel.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/controllers/formDesignerCtrl.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/package.json",
+		"/C/Projects/Composer/MetLife-Composer-UI/Gruntfile.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/grunt/copy.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/grunt/less.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/grunt/config.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/frmMainHeader.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/assets/styles/utilities/_positions.less",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/assets/styles/utilities/_display.less",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/formDesigner.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/formDesigner.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/harmony_test.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/grunt/fileblocks.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/index.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/harmonyViewer/core.harmony.min.css",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/harmonyViewer/app.min.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/loadExistingFormModal.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/createNewFormModal.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/frmPropertiesPanel.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/frmElementPropertiesPanel.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/frmHiddenPropertiesPanel.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/views/frmWidgetsPanel.tpl.html",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/services/path.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/controllers/FormCtrl.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/directives/frmMainHeader.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/directives/frmHiddenPropertiesPanel.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/directives/frmElementsPanel.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/services/modalService.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/bower_components/angular-strap/src/modal/modal.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/bower_components/angular-ui-router/src/state.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/services/pathService.js",
+		"/C/Projects/Composer/MetLife-Composer-UI/src/composer/formDesigner/directives/frmWidgetsPanel.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Projects\\Composer\\MetLife-Composer-UI\\src\\composer\\formDesigner\\directives",
+			"C:\\Projects\\Composer\\MetLife-Composer-UI\\src\\composer\\formDesigner"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			":",
+			"'",
+			"ModalFactory",
+			"pathProvider",
+			"angular.module(\"formDesigner\").viewPath",
+			"formDesigner",
+			"'",
+			"ng-if",
+			"$scope.",
+			"resultss",
+			"result",
+			"height:100%; ",
+			"width:",
+			".w",
+			"width:",
+			".w",
+			"w",
+			"watch",
+			"livereload",
+			"autoprefixer",
+			"$modal",
+			"fieldEdit",
+			"ontE",
+			"ontEntities",
+			"entites",
+			"ontE"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"=",
+			"\"",
+			"path",
+			"pathProvider.views",
+			"\"",
+			"ng-show",
+			"",
+			"results",
+			"",
+			"height:",
+			".h",
+			"height:",
+			".h",
+			"h",
+			"fieldSearch",
+			"e",
+			"entity",
+			"e"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test/view/text_view_test.html",
+					"settings":
+					{
+						"buffer_size": 2227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								994,
+								994
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test/index.html",
+					"settings":
+					{
+						"buffer_size": 979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								940,
+								940
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/canvasApp/display/ViewGroup.ts",
+					"settings":
+					{
+						"buffer_size": 3725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3400,
+								3155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 938.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/canvasApp/layout/AbsoluteLayout.ts",
+					"settings":
+					{
+						"buffer_size": 678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								678,
+								678
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/canvasApp/interfaces/ILayout.ts",
+					"settings":
+					{
+						"buffer_size": 66,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/canvasApp/graphics/DrawnShape.ts",
+					"settings":
+					{
+						"buffer_size": 1389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/canvasApp/display/View.ts",
+					"settings":
+					{
+						"buffer_size": 4737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true
+}
